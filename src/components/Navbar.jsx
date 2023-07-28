@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../assets/pizzaLogo.jpg";
+import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
   render() {
@@ -7,7 +8,12 @@ export class Navbar extends Component {
       <div className="navbar">
         <div className="leftSide"></div>
         <img src={Logo} />
-        <div className="rightSide"></div>
+        <div className="rightSide">
+          <Link to="/home">Home </Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
       </div>
     );
   }
