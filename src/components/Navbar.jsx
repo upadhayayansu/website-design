@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Logo from "../assets/pizzaLogo.jpg";
 import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
 export class Navbar extends Component {
   render() {
